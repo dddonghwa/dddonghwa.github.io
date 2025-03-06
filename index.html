@@ -53,7 +53,7 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
+<!-- 
     <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -100,16 +100,56 @@
 				A single model built around diffusion and NeRF that does text-to-3D, image-to-3D, and few-view reconstruction, trains in 1 minute, and renders at 60FPS in a browser.
         </p>
       </td>
-    </tr>
+    </tr> -->
 
-  <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+<tr onmouseout="srtensorf_stop()" onmouseover="srtensorf_start()">
+	      <td style="padding:20px;width:25%;vertical-align:middle">
+		<div class="one">
+		  <div class="two" id="srtensorf_image" style="opacity: 0;">
+		    <img src="images/nemo_after.png" width="160"></div>
+		    <img src="images/nemo_before.png" width="160">
+		</div>
+		<script type="text/javascript">
+		  function srtensorf_start() {
+		    document.getElementById('srtensorf_image').style.opacity = "1";
+		  }
+
+		  function srtensorf_stop() {
+		    document.getElementById('srtensorf_image').style.opacity = "0";
+		  }
+		  srtensorf_stop()
+		</script>
+	      </td>
+		    <td style="padding:20px;width:75%;vertical-align:middle">
+		  <a href="https://arxiv.org/abs/2411.01494">
+		    <papertitle>Finding NeMo: Negative-mined Mosaic Augmentation for Referring Image Segmentation</papertitle>
+		  </a>
+		  <br>
+        	<a href="https://scholar.google.com/citations?user=dmvMjvcAAAAJ&hl=ko&oi=sra">Seongsu Ha</a>,
+		<a href="https://scholar.google.com/citations?user=lfkRbIsAAAAJ&hl=ko&oi=sra">Chaeyun Kim</a>,
+		  <strong>Donghwa Kim</strong>,
+		<a href="https://scholar.google.com/citations?user=s_orZYMAAAAJ&hl=ko&oi=sra">Junho Lee</a>,
+		<a href="https://scholar.google.com/citations?user=Lq8MN6wAAAAJ&hl=ko&oi=sra">Sangho Lee</a>,
+		  <br>
+	    <em>ECCV</em>, 2024 &nbsp;
+		  <br>
+		  <a href="https://arxiv.org/abs/2411.01494">arXiv</a>
+		  <p></p>
+		  <p>
+			  We propose a simple but powerful data augmentation method which augments a training image into a mosaic with three other negative images carefully curated by a pretrained multimodal alignment model, e.g., CLIP, to make the sample more challenging.
+		  </p>
+		</td>
+	      </tr>
+		  
+		  
+<tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
           <source src="images/r2r.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/r2r.jpg' width=100%>
+          <img src='images/molef_img.jpg' width=100%>
         </div>
         <script type="text/javascript">
           function r2r_start() {
@@ -124,25 +164,24 @@
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://relight-to-reconstruct.github.io/">
-          <span class="papertitle">Generative Multiview Relighting for
-3D Reconstruction under Extreme Illumination Variation</span>
+          <span class="papertitle">Towards a Complete Benchmark on Video Moment Localization</span>
         </a>
         <br>
-        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-				<strong>Jonathan T. Barron</strong>, 
-        <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>, 
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>
+        <a href="https://scholar.google.com/citations?user=xoCgUjAAAAAJ&hl=ko&oi=sra">Jinyeong Chae</a>,
+				<strong>Donghwa Kim</strong>, 
+	      				Kwanseok Kim, 
+	      				Doyeon Lee, 
+	      				Sangho Lee, 
+        <a href="https://scholar.google.com/citations?user=dmvMjvcAAAAJ&hl=ko&oi=sra">Seongsu Ha</a>,
+	      Jonghwan Mun, Wooyoung Kang, Byungseok Roh, 
+        <a href="https://scholar.google.com/citations?user=M-MfqpMAAAAJ&hl=en">Joonseok Lee</a>,
         <br>
-        <em>arXiv</em>, 2024
+        <em>AISTATS</em>, 2024
         <br>
-        <a href="https://relight-to-reconstruct.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2412.15211">arXiv</a>
+        <a href="https://proceedings.mlr.press/v238/chae24a.html">paper</a>
         <p></p>
         <p>
-				Images taken under extreme illumination variation can be made consistent with diffusion, and this enables high-quality 3D reconstruction.
+		We conduct an extensive benchmark study to measure the performance of representative methods on widely used 7 datasets, while posing additional research questions and empirically verify them.
         </p>
       </td>
     </tr>
